@@ -20,7 +20,6 @@ func _on_click(_viewport: Node, event: InputEvent, _shape_idx: int) -> void:
 	if(event is InputEventMouseButton):
 		if(event.pressed):
 			animation.play('Click')
-			animation.queue('Hover')
 
 			emit_signal('on_click_event')
 

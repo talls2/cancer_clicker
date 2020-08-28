@@ -19,10 +19,21 @@ tracks/0/keys = {
 "update": 0,
 "values": [ Vector2( 1, 1 ), Vector2( 0.9, 0.9 ), Vector2( 1, 1 ) ]
 }
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sprites:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
 
 [sub_resource type="Animation" id=2]
 resource_name = "Hover"
-loop = true
 step = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprites:rotation_degrees")
@@ -124,7 +135,6 @@ position = Vector2( -74.4769, 10.1481 )
 scale = Vector2( 2, 2 )
 frames = SubResource( 8 )
 animation = "idle"
-frame = 1
 playing = true
 
 [node name="ClickableArea" type="Area2D" parent="."]
